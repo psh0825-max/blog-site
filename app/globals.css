@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+@layer base {
+  html {
+    font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+      system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
+      'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100;
+  }
+}
+
+/* 마크다운 글 스타일 */
+.prose {
+  @apply text-gray-800 dark:text-gray-200 leading-relaxed;
+}
+
+.prose h1 {
+  @apply text-3xl font-bold mt-10 mb-4 text-gray-900 dark:text-white;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold mt-8 mb-3 text-gray-900 dark:text-white;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold mt-6 mb-2 text-gray-900 dark:text-white;
+}
+
+.prose p {
+  @apply mb-4 text-base leading-7;
+}
+
+.prose a {
+  @apply text-primary-600 dark:text-primary-400 underline underline-offset-2 hover:text-primary-700 dark:hover:text-primary-300 transition-colors;
+}
+
+.prose ul {
+  @apply list-disc list-inside mb-4 space-y-1;
+}
+
+.prose ol {
+  @apply list-decimal list-inside mb-4 space-y-1;
+}
+
+.prose li {
+  @apply text-base leading-7;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-primary-500 pl-4 italic text-gray-600 dark:text-gray-400 my-6;
+}
+
+.prose code {
+  @apply bg-gray-100 dark:bg-gray-800 text-primary-700 dark:text-primary-300 px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.prose pre {
+  @apply bg-gray-900 dark:bg-gray-800 text-gray-100 p-4 rounded-xl overflow-x-auto my-6;
+}
+
+.prose pre code {
+  @apply bg-transparent text-inherit px-0 py-0;
+}
+
+.prose img {
+  @apply rounded-xl my-6;
+}
+
+.prose hr {
+  @apply border-gray-200 dark:border-gray-800 my-8;
+}
+
+.prose strong {
+  @apply font-bold text-gray-900 dark:text-white;
+}
+
+/* line clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
