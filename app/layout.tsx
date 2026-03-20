@@ -5,8 +5,8 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'LightOn+ Blog — 기술 블로그',
-    template: '%s | LightOn+ Blog',
+    default: 'LightOn Plus Lab Blog — 기술 블로그',
+    template: '%s | LightOn Plus Lab Blog',
   },
   description:
     'LightOn Plus Lab 기술 블로그. AI, 바이브 코딩, 앱 개발에 대한 최신 인사이트를 공유합니다.',
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ko_KR',
-    siteName: 'LightOn+ Blog',
-    title: 'LightOn+ Blog — 기술 블로그',
+    siteName: 'LightOn Plus Lab Blog',
+    title: 'LightOn Plus Lab Blog — 기술 블로그',
     description:
       'LightOn Plus Lab 기술 블로그. AI, 바이브 코딩, 앱 개발에 대한 최신 인사이트를 공유합니다.',
   },
